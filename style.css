@@ -275,6 +275,33 @@ footer {
   font-size: 3rem;
 }
 
+/*******! Show-Case-Section*******/
+.show-case-section {
+  background: url("./images/show\ case\ bg.png") no-repeat center;
+  background-size: cover;
+  max-width: var(--body-max-width);
+  padding-block: 13rem 10rem;
+  margin-inline: auto;
+}
+.show-case {
+  margin-inline: auto;
+  max-width: 110rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-case-content .heading-secondary {
+  color: var(--text-color-light);
+  max-width: 57.5rem;
+}
+.show-case-content .text-details {
+  color: var(--text-color-light);
+  line-height: 3.4rem;
+  margin-block: 2.4rem;
+  max-width: 40rem;
+}
+
 /*******! Common CSS ---> Card *******/
 
 .cards {
