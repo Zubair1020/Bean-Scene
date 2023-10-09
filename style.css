@@ -8,7 +8,6 @@
 }
 html {
   font-size: 62.5%;
-  color-scheme: dark;
 }
 body,
 h1,
@@ -100,8 +99,8 @@ body {
   --card-background-color-dark: #f9c06a6b;
 }
 :root {
-  --body-max-width: 138rem;
-  --container-max-width: 118rem;
+  --body-max-width: 192rem;
+  --container-max-width: 120rem;
 }
 
 body {
@@ -113,202 +112,27 @@ footer {
   max-width: var(--body-max-width);
   margin-inline: auto;
 }
-/*******! Center Sections Combine CSS*******/
+/******* Center Sections Combine CSS*******/
 .navbar,
 .hero-section,
+.feature,
+.shop-section,
+.testimony,
+.show-case,
+.feedback-section,
 .news-latter,
 .footer-content {
   max-width: var(--container-max-width);
   margin-inline: auto;
 }
 
-/******* (Heder ) *******/
-.header {
-  background: url("./images/hero-bg.png") center no-repeat;
-  background-size: cover;
-  padding-block: 2.5rem;
-}
-/*******! Navbar Section *******/
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-transform: capitalize;
-}
-
-.navbar-logo {
-  font-family: var(--clicker-font);
-  font-size: var(--font-size-xxxxl);
-  transition: color 0.3s ease;
-}
-
-.navbar-links {
-  display: flex;
-  gap: 6rem;
-  align-items: center;
-  justify-content: center;
-}
-.navbar-links a {
-  color: var(--text-color-light);
-  font-weight: var(--font-weight-500);
-  font-size: var(--font-size-xs);
-  transition: color 0.3s ease;
-}
-.navbar-logo:hover,
-.navbar-links a:hover {
-  color: var(--background-color-accent);
-  cursor: pointer;
-}
-.navbar-button {
-  font-size: var(--font-size-s);
-}
-.navbar-button--1 {
-  margin-right: 3.5rem;
-  background-color: transparent;
-  transition: color 0.3s ease;
-}
-.navbar-button--1:hover {
-  color: var(--background-color-accent);
-}
-/*******! Hero Section *******/
-.hero-section {
-  margin-block: 11.5rem;
-}
-.hero-content {
-  max-width: 53rem;
-}
-.heading-primary {
-  font-family: var(--clicker-font);
-  font-size: var(--font-size-custom);
-  font-weight: var(--font-weight-400);
-}
-.sub-heading {
-  color: var(--text-color-light);
-  font-size: var(--font-size-l);
-  font-weight: var(--font-weight-500);
-  line-height: 3.4rem;
-}
-.sub-heading--1 {
-  font-size: var(--font-size-xl);
-}
-.hero-content .btn {
-  margin-top: 3.5rem;
-}
-
-/*******      (Main)    *******/
-.main {
-  background-color: var(--background-color-lighter);
-}
-
-/*******! Feature Section *******/
-
-.feature-section {
-  background: url("./images/coffee_blast\ left.png") no-repeat bottom left;
-  padding-block: 15rem;
-}
-
-.feature {
-  background: ;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: var(--container-max-width);
-  margin-inline: auto;
-}
-.feature-content {
-  max-width: 58.5rem;
-}
-.feature-content .text-details {
-  margin-block: 3rem;
-  line-height: 3.4rem;
-}
-.heading-secondary {
-  color: var(--text-color-accent);
-  font-size: var(--font-size-huge);
-  font-weight: var(--font-weight-700);
-}
-.text-details {
-  color: var(--text-color-gray);
-  font-size: var(--font-size-s);
-}
-
-/*******! Shop Latter Section *******/
-.shop-section {
-  margin-bottom: 5rem;
-}
-.shop {
-  max-width: var(--container-max-width);
-  margin-inline: auto;
-  text-align: center;
-}
-.shop .text-details {
-  margin-block: 1.6rem 3.2rem;
-}
-.shop-btn {
-  margin-bottom: -2.5rem;
-}
-
-/*******! Testimony Section *******/
-
-.testimony-section {
-  background: url("./images/coffee_blast\ right.png") no-repeat top right;
-  text-align: center;
-  padding-block: 13rem;
-}
-.testimony-section .card {
-  margin-block: 3.5rem;
-  width: 28rem;
-  height: 28.4rem;
-  transition: all 0.4s ease;
-}
-.testimony-section .card:hover {
-  background-color: var(--card-background-color-dark);
-}
-.testimony-section .card .card__title {
-  margin-top: 2.5rem;
-}
-.testimony-section .card .card__description {
-  max-width: 13rem;
-}
-.testimony-sub-heading {
-  font-size: 3rem;
-}
-
-/*******! Show-Case-Section*******/
-.show-case-section {
-  background: url("./images/show\ case\ bg.png") no-repeat center;
-  background-size: cover;
-  max-width: var(--body-max-width);
-  padding-block: 13rem 10rem;
-  margin-inline: auto;
-}
-.show-case {
-  margin-inline: auto;
-  max-width: 110rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.show-case-content .heading-secondary {
-  color: var(--text-color-light);
-  max-width: 57.5rem;
-}
-.show-case-content .text-details {
-  color: var(--text-color-light);
-  line-height: 3.4rem;
-  margin-block: 2.4rem;
-  max-width: 40rem;
-}
-
-/*******! Common CSS ---> Card *******/
+/******* Common CSS ---> Card *******/
 
 .cards {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 3rem;
 }
 .card {
   background-color: var(--card-background-color-light);
@@ -344,7 +168,7 @@ footer {
   font-weight: var(--font-weight-700);
 }
 
-/*******! Common CSS ---> Buttons *******/
+/******* Common CSS ---> Buttons *******/
 .btn {
   background: var(--background-color-accent);
   border-radius: 2.4rem;
@@ -360,37 +184,208 @@ footer {
   box-shadow: 0 1px 1.5rem 4px var(--background-color-accent);
 }
 
-/*******! News Latter Section *******/
+/******* (Heder ) *******/
+.header {
+  background: url("./images/hero-bg.png") center no-repeat;
+  background-size: cover;
+  padding-block: 2.5rem;
+  color: var(--text-color-light);
+}
+/******* Navbar Section *******/
 
-.news-latter {
-  background-color: ;
-  background-image: url();
-  background-repeat: no-repeat;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.navbar-logo {
+  font-family: var(--clicker-font);
+  font-size: var(--font-size-xxxxl);
+  transition: color 0.3s ease;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+.navbar-links a {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-xs);
+  transition: color 0.3s ease;
+}
+.navbar-logo:hover,
+.navbar-links a:hover {
+  color: var(--background-color-accent);
+  cursor: pointer;
+}
+.navbar-button {
+  font-size: var(--font-size-s);
+}
+.navbar-button--1 {
+  margin-right: 3.5rem;
+  background-color: transparent;
+  transition: color 0.3s ease;
+}
+.navbar-button--1:hover {
+  color: var(--background-color-accent);
+}
+/******* Hero Section *******/
+.hero-section {
+  margin-block: 11.5rem;
+}
+.hero-content {
+  max-width: 53rem;
+}
+.hero-content .heading-primary {
+  color: var(--text-color-light);
+}
+.heading-primary {
+  font-family: var(--clicker-font);
+  font-size: var(--font-size-custom);
+  font-weight: var(--font-weight-400);
+}
+.sub-heading {
+  color: var(--text-color-light);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-500);
+  line-height: 3.4rem;
+}
+.sub-heading--1 {
+  font-size: var(--font-size-xl);
+}
+.hero-content .btn {
+  margin-top: 3.5rem;
+}
+
+/*******      (Main)    *******/
+.main {
+  background-color: var(--background-color-lighter);
+}
+/******* Feature Section *******/
+
+.feature-section {
+  background: url("./images/coffee_blast\ left.png") no-repeat bottom left;
+  padding-block: 15rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feature-content {
+  max-width: 58.5rem;
+}
+.feature-content .text-details {
+  margin-block: 3rem;
+  line-height: 3.4rem;
+}
+.heading-secondary {
+  color: var(--text-color-accent);
+  font-size: var(--font-size-huge);
+  font-weight: var(--font-weight-700);
+}
+.text-details {
+  color: var(--text-color-gray);
+  font-size: var(--font-size-s);
+}
+
+/******* Shop Latter Section *******/
+.shop-section {
+  margin-bottom: 5rem;
+}
+.shop {
   text-align: center;
 }
-.news-latter h3 {
+.shop .text-details {
+  margin-block: 1.6rem 3.2rem;
+}
+.shop-btn {
+  margin-bottom: -2.5rem;
 }
 
-.news-latter p {
+.shop .card {
+  width: 28.4rem;
 }
 
-.news-latter-form {
+/******* Testimony Section *******/
+
+.testimony-section {
+  background: url("./images/coffee_blast\ right.png") no-repeat top right;
+  text-align: center;
+  padding-block: 13rem;
+}
+.testimony-section .card {
+  margin-block: 3.5rem;
+  width: 28.4rem;
+  aspect-ratio: 1;
+  transition: all 0.4s ease;
+}
+.testimony-section .card:hover {
+  background-color: var(--card-background-color-dark);
+}
+.testimony-section .card .card__title {
+  margin-top: 2.5rem;
+}
+.testimony-section .card .card__description {
+  max-width: 13rem;
+}
+.testimony-sub-heading {
+  font-size: 3rem;
+}
+
+/******* Show-Case-Section*******/
+.show-case-section {
+  background: url("./images/show\ case\ bg.png") no-repeat center;
+  background-size: cover;
+  max-width: var(--body-max-width);
+  padding-block: 10rem 10rem;
+  margin-inline: auto;
+}
+.show-case {
   display: flex;
-  gap: ;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-}
-.news-latter-form input {
-  border: none;
-  outline: none;
-  border-radius: 1rem;
-  padding: 0.8rem 2rem;
-}
-.news-latter-form button {
-  border-radius: 1rem;
+  padding-right: 5rem;
 }
 
-/*******! Footer Section *******/
+.show-case-content .heading-secondary {
+  color: var(--text-color-light);
+  max-width: 57.5rem;
+}
+.show-case-content .text-details {
+  color: var(--text-color-light);
+  line-height: 3.4rem;
+  margin-block: 2.4rem;
+  max-width: 40rem;
+}
+
+/******* Feedback Section *******/
+.feedback {
+  padding-block: 1;
+  text-align: center;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.profile .heading-secondary {
+  font-size: var(--font-size-xxxl);
+}
+.profile__image {
+  margin-top: 4rem;
+  max-width: 11rem;
+  aspect-ratio: 1;
+}
+/******* News Latter Section *******/
+
+/******* Footer Section *******/
 /* Footer Styles */
 footer {
   text-align: center;
@@ -420,9 +415,4 @@ footer {
 .footer-links a {
   text-decoration: none;
   color: #fff;
-}
-
-footer p {
-  margin-top: 10px;
-  font-size: 14px;
 }
