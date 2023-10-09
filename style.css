@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:wght@400;500;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  color-scheme: dark;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+button {
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+}
+
+:root {
+  /* Font Family */
+  --clicker-font: Clicker Script;
+  --playfair-font: Playfair Display;
+
+  /* Font Width */
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+
+  /* Font Size */
+  --font-size-xs: 1.4rem;
+  --font-size-s: 1.6rem;
+  --font-size-m: 1.8rem;
+  --font-size-l: 2rem;
+  --font-size-xl: 2.2rem;
+  --font-size-xxl: 2.8rem;
+  --font-size-xxxl: 3.2rem;
+  --font-size-xxxxl: 3.5rem;
+  --font-size-huge: 5.4rem;
+  --font-size-custom: 22rem;
+}
+:root {
+  /* Text Colors */
+  --text-color-light: #ffffff;
+  --text-color-dark: #1e1e1e;
+  --text-color-gray: #707070;
+  --text-color-accent: #603809;
+
+  /* Background Colors */
+  --background-color-lighter: #fffefc;
+  --background-color-dark: #00000057;
+  --background-color-accent: #f9c06a;
+
+  /* Button Colors */
+  --button-color-primary: #603809;
+  --button-color-secondary: #442808;
+
+  /* Card Background Color */
+  --card-background-color-light: #ffeed8;
+  --card-background-color-dark: #f9c06a6b;
+}
+:root {
+  --body-max-width: 138rem;
+  --container-max-width: 118rem;
+}
+
+body {
+  font-family: var(--playfair-font);
+}
+header,
+main,
+footer {
+  max-width: var(--body-max-width);
+  margin-inline: auto;
+}
+/*******! Center Sections Combine CSS*******/
+.navbar,
+.hero-section,
+.news-latter,
+.footer-content {
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+}
+
+/******* (Heder ) *******/
+.header {
+  background: url("./images/hero-bg.png") center no-repeat;
+  background-size: cover;
+  padding-block: 2.5rem;
+}
+/*******! Navbar Section *******/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.navbar-logo {
+  font-family: var(--clicker-font);
+  font-size: var(--font-size-xxxxl);
+  transition: color 0.3s ease;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-links a {
+  color: var(--text-color-light);
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-xs);
+  transition: color 0.3s ease;
+}
+.navbar-logo:hover,
+.navbar-links a:hover {
+  color: var(--background-color-accent);
+  cursor: pointer;
+}
+.navbar-button {
+  font-size: var(--font-size-s);
+}
+.navbar-button--1 {
+  margin-right: 3.5rem;
+  background-color: transparent;
+  transition: color 0.3s ease;
+}
+.navbar-button--1:hover {
+  color: var(--background-color-accent);
+}
+/*******! Hero Section *******/
+.hero-section {
+  margin-block: 11.5rem;
+}
+.hero-content {
+  max-width: 53rem;
+}
+.heading-primary {
+  font-family: var(--clicker-font);
+  font-size: var(--font-size-custom);
+  font-weight: var(--font-weight-400);
+}
+.sub-heading {
+  color: var(--text-color-light);
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-500);
+  line-height: 3.4rem;
+}
+.sub-heading--1 {
+  font-size: var(--font-size-xl);
+}
+.hero-content .btn {
+  margin-top: 3.5rem;
+}
+
+/*******      (Main)    *******/
+.main {
+  background-color: var(--background-color-lighter);
+}
+
+/*******! Feature Section *******/
+
+.feature-section {
+  background: url("./images/coffee_blast\ left.png") no-repeat bottom left;
+  padding-block: 15rem;
+}
+
+.feature {
+  background: ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+}
+.feature-content {
+  max-width: 58.5rem;
+}
+.feature-content .text-details {
+  margin-block: 3rem;
+  line-height: 3.4rem;
+}
+.heading-secondary {
+  color: var(--text-color-accent);
+  font-size: var(--font-size-huge);
+  font-weight: var(--font-weight-700);
+}
+.text-details {
+  color: var(--text-color-gray);
+  font-size: var(--font-size-s);
+}
+
+/*******! Shop Latter Section *******/
+.shop-section {
+  margin-bottom: 5rem;
+}
+.shop {
+  max-width: var(--container-max-width);
+  margin-inline: auto;
+  text-align: center;
+}
+.shop .text-details {
+  margin-block: 1.6rem 3.2rem;
+}
+.shop-btn {
+  margin-bottom: -2.5rem;
+}
+
+/*******! Testimony Section *******/
+
+.testimony-section {
+  background: url("./images/coffee_blast\ right.png") no-repeat top right;
+  text-align: center;
+  padding-block: 13rem;
+}
+.testimony-section .card {
+  margin-block: 3.5rem;
+  width: 28rem;
+  height: 28.4rem;
+  transition: all 0.4s ease;
+}
+.testimony-section .card:hover {
+  background-color: var(--card-background-color-dark);
+}
+.testimony-section .card .card__title {
+  margin-top: 2.5rem;
+}
+.testimony-section .card .card__description {
+  max-width: 13rem;
+}
+.testimony-sub-heading {
+  font-size: 3rem;
+}
+
+/*******! Common CSS ---> Card *******/
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.card {
+  background-color: var(--card-background-color-light);
+  border: 1px solid var(--card-background-color-dark);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__image {
+  border-radius: 3px;
+}
+.card__content {
+  padding: 1.6rem;
+}
+
+.card__title {
+  color: var(--text-color-accent);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-700);
+  text-transform: capitalize;
+}
+.card__description {
+  color: var(--text-color-dark);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-400);
+  margin-block: 0.5rem;
+}
+.card__price {
+  color: var(--text-color-accent);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-700);
+}
+
+/*******! Common CSS ---> Buttons *******/
+.btn {
+  background: var(--background-color-accent);
+  border-radius: 2.4rem;
+  box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
+  color: var(--button-color-secondary);
+  font-size: var(--font-size-s);
+  font-weight: var(--font-weight-700);
+  padding: 1.4rem 2.6rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  box-shadow: 0 1px 1.5rem 4px var(--background-color-accent);
+}
+
+/*******! News Latter Section *******/
+
+.news-latter {
+  background-color: ;
+  background-image: url();
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.news-latter h3 {
+}
+
+.news-latter p {
+}
+
+.news-latter-form {
+  display: flex;
+  gap: ;
+  align-items: center;
+  justify-content: center;
+}
+.news-latter-form input {
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: 0.8rem 2rem;
+}
+.news-latter-form button {
+  border-radius: 1rem;
+}
+
+/*******! Footer Section *******/
+/* Footer Styles */
+footer {
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 14px;
+}
