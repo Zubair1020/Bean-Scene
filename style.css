@@ -119,9 +119,8 @@ footer {
 .shop-section,
 .testimony,
 .show-case,
-.feedback-section,
 .news-latter,
-.footer-content {
+.footer {
   max-width: var(--container-max-width);
   margin-inline: auto;
 }
@@ -186,7 +185,8 @@ footer {
 
 /******* (Heder ) *******/
 .header {
-  background: url("./images/hero-bg.png") center no-repeat;
+  background: var(--button-color-primary) url("./images/hero-bg.png") center
+    no-repeat;
   background-size: cover;
   padding-block: 2.5rem;
   color: var(--text-color-light);
@@ -339,11 +339,12 @@ footer {
 
 /******* Show-Case-Section*******/
 .show-case-section {
-  background: url("./images/show\ case\ bg.png") no-repeat center;
+  background: var(--button-color-primary) url("./images/show\ case\ bg.png")
+    no-repeat center;
   background-size: cover;
-  max-width: var(--body-max-width);
-  padding-block: 10rem 10rem;
+  padding-block: 10rem;
   margin-inline: auto;
+  max-width: var(--body-max-width);
 }
 .show-case {
   display: flex;
@@ -364,9 +365,61 @@ footer {
 }
 
 /******* Feedback Section *******/
-.feedback {
-  padding-block: 1;
+
+.feedback-section {
+  position: relative;
+  max-width: var(--body-max-width);
   text-align: center;
+  margin: 14rem auto;
+}
+.coffee_blast-top {
+  top: -2rem;
+  right: 0;
+  position: absolute;
+}
+.coffee_blast-bottom {
+  bottom: -2rem;
+  left: 0;
+  position: absolute;
+}
+
+.carousel {
+  background-color: var(--card-background-color-dark);
+  border: 1px solid var(--card-background-color-dark);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 13rem 4em;
+  margin: 3rem auto 0;
+  max-width: 98rem;
+}
+
+.carousel__btn--previous,
+.carousel__btn--next {
+  position: relative;
+  background-color: transparent;
+  width: 8.2rem;
+  aspect-ratio: 1;
+}
+.carousel__btn--previous {
+  left: -4rem;
+}
+.carousel__btn--next {
+  right: -4rem;
+}
+.carousel__content > .text-details {
+  position: relative;
+  max-width: 70rem;
+  line-height: 3.6rem;
+}
+.carousel__content > .text-details::before {
+  content: "“";
+  position: absolute;
+  color: var(--text-color-accent);
+  font-size: 22rem;
+  top: -2rem;
+  left: -8rem;
 }
 .profile {
   display: flex;
@@ -374,45 +427,117 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin-top: 3rem;
 }
 .profile .heading-secondary {
   font-size: var(--font-size-xxxl);
 }
 .profile__image {
-  margin-top: 4rem;
+  position: relative;
+  bottom: -9rem;
   max-width: 11rem;
   aspect-ratio: 1;
 }
-/******* News Latter Section *******/
 
-/******* Footer Section *******/
-/* Footer Styles */
-footer {
+/******* (Footer ) *******/
+
+/*******  News-Latter Section *******/
+.news-latter {
+  position: relative;
+  background: var(--button-color-primary) url("./images/newslatter\ bg.png")
+    no-repeat center;
+  background-size: cover;
+  padding-block: 10rem 15rem;
   text-align: center;
+  max-width: var(--body-max-width);
+  margin-inline: auto;
+}
+.pngwing {
+  position: absolute;
+  bottom: -19rem;
+}
+.pngwing--1 {
+  left: 0;
+}
+.pngwing--2 {
+  right: 0;
+}
+.news-latter .heading-secondary {
+  color: var(--background-color-lighter);
+}
+.news-latter .text-details {
+  color: var(--background-color-lighter);
+  margin-bottom: 3rem;
+}
+.news-latter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news-latter input {
+  font-size: var(--font-size-l);
+  color: var(--text-color-gray);
+  font-family: var(--playfair-font);
+  border: none;
+  outline: none;
+  border-radius: 0.4rem 0 0 0.4rem;
+  padding-left: 3rem;
+  width: 64.2rem;
+  height: 6.6rem;
 }
 
-.footer-content {
+.news-latter button {
+  background: #f9c06a;
+  border-radius: 0 0.4rem 0.4rem 0;
+  box-shadow: 0px 6px 12px 0px var(--card-background-color-dark);
+  border: none;
+  outline: none;
+  width: 13.7rem;
+  height: 6.6rem;
+  padding: 0;
+  font-size: var(--font-size-xl);
+}
+/******* Footer Section *******/
+
+.footer-section {
+  background: var(--button-color-primary) url("./images/footer-bg.png")
+    no-repeat center;
+  background-size: cover;
+  padding: 20rem 3rem 10rem;
+  max-width: var(--body-max-width);
+  margin-inline: auto;
+}
+.footer {
+  color: var(--text-color-light);
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
-.footer-logo {
-  font-size: 24px;
-  font-weight: bold;
+.footer__logo-container h3 {
+  font-size: var(--font-size-huge);
+  font-family: var(--clicker-font);
 }
-
-.footer-links {
-  list-style: none;
-  padding: 0;
+.footer__logo-container p {
+  font-size: var(--font-size-xs);
+  line-height: 2.2rem;
+  margin-block: 3rem;
+  max-width: 38rem;
 }
-
-.footer-links li {
-  display: inline;
-  margin-right: 20px;
+.footer__list-about li,
+.footer__list-company li,
+.footer__list-contact li {
+  font-size: var(--font-size-s);
+  margin-bottom: 2rem;
 }
-
-.footer-links a {
-  text-decoration: none;
-  color: #fff;
+.footer h4 {
+  font-size: 2.6rem;
+  margin-bottom: 5.5rem;
+}
+.footer__list-contact h4 {
+  margin-bottom: 0;
+}
+.footer__list-contact p {
+  font-size: var(--font-size-s);
+  line-height: 3rem;
+  margin-block: 3rem;
+  max-width: 27rem;
 }
